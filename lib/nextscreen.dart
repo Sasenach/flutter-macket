@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:testflutter/meditate.dart';
 
 class NextScreen extends StatelessWidget {
   const NextScreen({super.key});
@@ -69,7 +70,10 @@ class NextScreen extends StatelessWidget {
                 height: 50,
                 margin: const EdgeInsets.only(top: 24),
                 child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (context) => meditate()));
+                    },
                     style: ElevatedButton.styleFrom(
                         backgroundColor: const Color(0xff039EA2),
                         shape: RoundedRectangleBorder(
