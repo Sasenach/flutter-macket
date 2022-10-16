@@ -76,6 +76,7 @@ flutter:
   - assets/images/heart.png
   - assets/images/loupe.png
   - assets/images/arrow.png
+  - assets/images/big_sun.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
